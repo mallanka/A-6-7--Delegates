@@ -31,12 +31,4 @@ namespace Advanced_Lesson_7_Delegates
 
         }
     }
-    public static class StringExtension
-    {
-        public static string StringFormatter(this string @string)
-        {
-
-            return
-        }
-    }
 }
