@@ -18,9 +18,14 @@ namespace Advanced_Lesson_7_Delegates
             //Lesson.SortWithAnonymousFunction();
             //Lesson.SortWithLambdaFunction();
             //Lesson.CarDelegateExample();
-            Lesson.ExamExample();
-
+            //Lesson.ExamExample();
+            List<string> list = new List<string> {"s t r i n g","str ing" };
+            StringDelegate del = Practice.StringToUpper;
+            del(list);
+            del = Practice.StringReplaceSpaces;
+            del(list);
             Console.ReadLine();
         }
     }
+    delegate void StringDelegate(List<string> list);
 }

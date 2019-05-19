@@ -14,7 +14,7 @@ namespace Advanced_Lesson_7_Delegates
         /// </summary>
         public static void L7P1_Calculator()
         {
-            
+
         }
 
         /// <summary>
@@ -29,6 +29,20 @@ namespace Advanced_Lesson_7_Delegates
         public static void L7P2_StringFormater()
         {
 
+        }
+        public static void StringToUpper(List<string> list)
+        {
+            for (int i = 0; i < list.Count; i++)
+            {
+                list[i] = list[i].ToUpper();
+            }
+        }
+        public static void StringReplaceSpaces(List<string> list)
+        {
+            for (int i = 0; i < list.Count; i++)
+            {
+                list[i] = list[i].Replace(" ", "");
+            }
         }
     }
 }
